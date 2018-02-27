@@ -1,0 +1,24 @@
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user: root
+  password: root123
+  url: jdbc:mysql://localhost:3306/db1
+  
+logging: 
+  level: INFO
+  loggers:
+    io.dropwizard: INFO
+    org.apache.http.level: INFO
+    org.apache.http.wire.level: INFO
+    "com.example.dw.Thing": DEBUG
+
+    "org.hibernate.SQL":
+      level: DEBUG
+      
+  appenders:
+    - type: file
+      currentLogFilename: ./logs/example.log
+      archivedLogFilenamePattern: ./logs/example-%d.log.gz
+      archivedFileCount: 5
+      timeZone: UTC
+    - type: console
