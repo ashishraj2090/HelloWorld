@@ -1,5 +1,6 @@
 /Users/ashish.k/Documents/workspace/HelloWorld/src/main/java/com/dropwizard/helloworld/HelloWorld/Employee.java
 /Users/ashish.k/Documents/workspace/HelloWorld/src/main/java/com/dropwizard/helloworld/HelloWorld/HelloResource.java
+/Users/ashish.k/Documents/workspace/HelloWorld/src/main/java/com/dropwizard/helloworld/HelloWorld/EmployeeDAO.java
 /Users/ashish.k/Documents/workspace/HelloWorld/src/main/java/com/dropwizard/helloworld/health/DemoHealthCheck.java
 /Users/ashish.k/Documents/workspace/HelloWorld/src/main/java/com/dropwizard/helloworld/HelloWorld/HelloWorldApplication.java
 /Users/ashish.k/Documents/workspace/HelloWorld/src/main/java/com/dropwizard/helloworld/HelloWorld/EmployeeResource.java

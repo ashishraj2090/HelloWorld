@@ -1,0 +1,565 @@
+INFO  [2018-02-26 10:47:45,677] org.eclipse.jetty.util.log: Logging initialized @1850ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-02-26 10:47:45,768] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-02-26 10:47:45,771] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-02-26 10:47:45,995] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
+INFO  [2018-02-26 10:47:45,997] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-02-26 10:47:46,008] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
+INFO  [2018-02-26 10:47:46,043] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-02-26 10:47:46,522] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  [2018-02-26 10:47:46,901] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
+INFO  [2018-02-26 10:47:46,902] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
+INFO  [2018-02-26 10:47:46,902] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
+INFO  [2018-02-26 10:47:46,902] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
+INFO  [2018-02-26 10:47:46,902] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
+INFO  [2018-02-26 10:47:46,902] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
+INFO  [2018-02-26 10:47:46,903] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
+INFO  [2018-02-26 10:47:46,903] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
+INFO  [2018-02-26 10:47:46,903] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
+INFO  [2018-02-26 10:47:47,174] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-02-26 10:47:47,316] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
+INFO  [2018-02-26 10:47:47,526] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 10:47:47,527] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 10:47:47,529] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+ERROR [2018-02-26 10:47:48,077] org.glassfish.jersey.internal.Errors: Following issues have been detected: 
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+
+WARN  [2018-02-26 10:47:48,079] org.eclipse.jetty.server.handler.ContextHandler.ROOT: unavailable
+! org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+! [[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7858d31d']
+! at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:555)
+! at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:184)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:350)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:347)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+! at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:347)
+! at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:177)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:369)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:103)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:273)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:252)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.server.Server.start(Server.java:449)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:416)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:85)
+! at io.dropwizard.cli.Cli.run(Cli.java:75)
+! at io.dropwizard.Application.run(Application.java:93)
+! at com.dropwizard.helloworld.HelloWorld.HelloWorldApplication.main(HelloWorldApplication.java:42)
+INFO  [2018-02-26 10:47:48,093] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 10:47:48,093] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+ERROR [2018-02-26 10:47:48,093] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+! [[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7858d31d']
+! at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:555)
+! at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:184)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:350)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:347)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+! at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:347)
+! at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:177)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:369)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+! ... 41 common frames omitted
+! Causing: javax.servlet.ServletException: io.dropwizard.jersey.setup.JerseyServletContainer-203e705e@e5276617==io.dropwizard.jersey.setup.JerseyServletContainer,jsp=null,order=1,inst=false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:658)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:103)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:273)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:252)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.server.Server.start(Server.java:449)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:416)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:85)
+! at io.dropwizard.cli.Cli.run(Cli.java:75)
+! at io.dropwizard.Application.run(Application.java:93)
+! at com.dropwizard.helloworld.HelloWorld.HelloWorldApplication.main(HelloWorldApplication.java:42)
+INFO  [2018-02-26 10:47:48,110] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 10:47:48,111] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 10:47:48,112] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@55e42684{/,null,UNAVAILABLE}
+INFO  [2018-02-26 11:24:40,946] org.eclipse.jetty.util.log: Logging initialized @1721ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-02-26 11:24:41,034] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-02-26 11:24:41,036] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-02-26 11:24:41,235] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
+INFO  [2018-02-26 11:24:41,236] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-02-26 11:24:41,247] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
+INFO  [2018-02-26 11:24:41,283] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-02-26 11:24:41,749] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  [2018-02-26 11:24:42,132] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
+INFO  [2018-02-26 11:24:42,133] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
+INFO  [2018-02-26 11:24:42,134] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
+INFO  [2018-02-26 11:24:42,134] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
+INFO  [2018-02-26 11:24:42,134] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
+INFO  [2018-02-26 11:24:42,134] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
+INFO  [2018-02-26 11:24:42,134] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
+INFO  [2018-02-26 11:24:42,135] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
+INFO  [2018-02-26 11:24:42,135] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
+INFO  [2018-02-26 11:24:42,473] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-02-26 11:24:42,637] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
+INFO  [2018-02-26 11:24:42,826] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:24:42,826] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:24:42,828] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+ERROR [2018-02-26 11:24:43,321] org.glassfish.jersey.internal.Errors: Following issues have been detected: 
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+
+WARN  [2018-02-26 11:24:43,324] org.eclipse.jetty.server.handler.ContextHandler.ROOT: unavailable
+! org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+! [[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7858d31d']
+! at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:555)
+! at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:184)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:350)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:347)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+! at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:347)
+! at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:177)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:369)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:103)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:273)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:252)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.server.Server.start(Server.java:449)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:416)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:85)
+! at io.dropwizard.cli.Cli.run(Cli.java:75)
+! at io.dropwizard.Application.run(Application.java:93)
+! at com.dropwizard.helloworld.HelloWorld.HelloWorldApplication.main(HelloWorldApplication.java:53)
+INFO  [2018-02-26 11:24:43,337] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:24:43,338] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+ERROR [2018-02-26 11:24:43,338] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+! [[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7858d31d']
+! at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:555)
+! at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:184)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:350)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:347)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+! at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:347)
+! at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:177)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:369)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+! ... 41 common frames omitted
+! Causing: javax.servlet.ServletException: io.dropwizard.jersey.setup.JerseyServletContainer-203e705e@e5276617==io.dropwizard.jersey.setup.JerseyServletContainer,jsp=null,order=1,inst=false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:658)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:103)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:273)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:252)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.server.Server.start(Server.java:449)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:416)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:85)
+! at io.dropwizard.cli.Cli.run(Cli.java:75)
+! at io.dropwizard.Application.run(Application.java:93)
+! at com.dropwizard.helloworld.HelloWorld.HelloWorldApplication.main(HelloWorldApplication.java:53)
+INFO  [2018-02-26 11:24:43,352] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:24:43,352] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:24:43,354] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@55e42684{/,null,UNAVAILABLE}
+INFO  [2018-02-26 11:30:16,996] org.eclipse.jetty.util.log: Logging initialized @1851ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-02-26 11:30:17,093] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-02-26 11:30:17,095] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-02-26 11:30:17,302] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
+INFO  [2018-02-26 11:30:17,303] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-02-26 11:30:17,314] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
+INFO  [2018-02-26 11:30:17,348] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-02-26 11:30:17,800] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  [2018-02-26 11:30:18,287] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
+INFO  [2018-02-26 11:30:18,288] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
+INFO  [2018-02-26 11:30:18,288] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
+INFO  [2018-02-26 11:30:18,289] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
+INFO  [2018-02-26 11:30:18,289] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
+INFO  [2018-02-26 11:30:18,289] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
+INFO  [2018-02-26 11:30:18,290] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
+INFO  [2018-02-26 11:30:18,290] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
+INFO  [2018-02-26 11:30:18,290] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
+INFO  [2018-02-26 11:30:18,625] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-02-26 11:30:18,759] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
+INFO  [2018-02-26 11:30:18,939] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:30:18,939] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:30:18,941] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2018-02-26 11:30:19,526] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /employees/{id} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    GET     /employees/{name} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    POST    /hello/greeting (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    GET     /hello/message (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    POST    /hello/post (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    DELETE  /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    GET     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    HEAD    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    POST    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    PUT     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+
+INFO  [2018-02-26 11:30:19,528] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@4f7bb8df{/,null,AVAILABLE}
+INFO  [2018-02-26 11:30:19,533] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2018-02-26 11:30:19,539] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@43a59289{/,null,AVAILABLE}
+INFO  [2018-02-26 11:30:19,549] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:30:19,550] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:30:19,550] org.eclipse.jetty.server.Server: Started @4407ms
+INFO  [2018-02-26 11:30:40,683] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:30:40,684] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:30:40,686] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@43a59289{/,null,UNAVAILABLE}
+INFO  [2018-02-26 11:30:40,694] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@4f7bb8df{/,null,UNAVAILABLE}
+INFO  [2018-02-26 11:30:49,386] org.eclipse.jetty.util.log: Logging initialized @1733ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-02-26 11:30:49,496] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-02-26 11:30:49,498] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-02-26 11:30:49,699] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
+INFO  [2018-02-26 11:30:49,701] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-02-26 11:30:49,712] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
+INFO  [2018-02-26 11:30:49,746] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-02-26 11:30:50,204] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  [2018-02-26 11:30:50,572] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
+INFO  [2018-02-26 11:30:50,573] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
+INFO  [2018-02-26 11:30:50,573] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
+INFO  [2018-02-26 11:30:50,574] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
+INFO  [2018-02-26 11:30:50,574] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
+INFO  [2018-02-26 11:30:50,575] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
+INFO  [2018-02-26 11:30:50,575] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
+INFO  [2018-02-26 11:30:50,575] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
+INFO  [2018-02-26 11:30:50,576] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
+INFO  [2018-02-26 11:30:50,833] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-02-26 11:30:50,980] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
+INFO  [2018-02-26 11:30:51,179] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:30:51,179] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:30:51,182] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+ERROR [2018-02-26 11:30:51,686] org.glassfish.jersey.internal.Errors: Following issues have been detected: 
+WARNING: A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.
+
+WARN  [2018-02-26 11:30:51,689] org.eclipse.jetty.server.handler.ContextHandler.ROOT: unavailable
+! org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+! [[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7858d31d']
+! at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:555)
+! at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:184)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:350)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:347)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+! at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:347)
+! at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:177)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:369)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:103)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:273)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:252)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.server.Server.start(Server.java:449)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:416)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:85)
+! at io.dropwizard.cli.Cli.run(Cli.java:75)
+! at io.dropwizard.Application.run(Application.java:93)
+! at com.dropwizard.helloworld.HelloWorld.HelloWorldApplication.main(HelloWorldApplication.java:53)
+INFO  [2018-02-26 11:30:51,702] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:30:51,702] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+ERROR [2018-02-26 11:30:51,703] io.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! org.glassfish.jersey.server.model.ModelValidationException: Validation of the application resource model has failed during application initialization.
+! [[FATAL] A resource model has ambiguous (sub-)resource method for HTTP method GET and input mime-types as defined by"@Consumes" and "@Produces" annotations at Java methods public java.util.List com.dropwizard.helloworld.HelloWorld.EmployeeResource.findByName(java.util.Optional) and public jersey.repackaged.com.google.common.base.Optional com.dropwizard.helloworld.HelloWorld.EmployeeResource.findById(io.dropwizard.jersey.params.LongParam) at matching regular expression /([^/]+). These two methods produces and consumes exactly the same mime-types and therefore their invocation as a resource methods will always fail.; source='org.glassfish.jersey.server.model.RuntimeResource@7858d31d']
+! at org.glassfish.jersey.server.ApplicationHandler.initialize(ApplicationHandler.java:555)
+! at org.glassfish.jersey.server.ApplicationHandler.access$500(ApplicationHandler.java:184)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:350)
+! at org.glassfish.jersey.server.ApplicationHandler$3.call(ApplicationHandler.java:347)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:315)
+! at org.glassfish.jersey.internal.Errors.process(Errors.java:297)
+! at org.glassfish.jersey.internal.Errors.processWithException(Errors.java:255)
+! at org.glassfish.jersey.server.ApplicationHandler.<init>(ApplicationHandler.java:347)
+! at org.glassfish.jersey.servlet.WebComponent.<init>(WebComponent.java:392)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:177)
+! at org.glassfish.jersey.servlet.ServletContainer.init(ServletContainer.java:369)
+! at javax.servlet.GenericServlet.init(GenericServlet.java:244)
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:637)
+! ... 41 common frames omitted
+! Causing: javax.servlet.ServletException: io.dropwizard.jersey.setup.JerseyServletContainer-203e705e@e5276617==io.dropwizard.jersey.setup.JerseyServletContainer,jsp=null,order=1,inst=false
+! at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:658)
+! at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:421)
+! at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:760)
+! at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:348)
+! at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:785)
+! at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:261)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at com.codahale.metrics.jetty9.InstrumentedHandler.doStart(InstrumentedHandler.java:103)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:113)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.gzip.GzipHandler.doStart(GzipHandler.java:273)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.handler.StatisticsHandler.doStart(StatisticsHandler.java:252)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:131)
+! at org.eclipse.jetty.server.Server.start(Server.java:449)
+! at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:105)
+! at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:113)
+! at org.eclipse.jetty.server.Server.doStart(Server.java:416)
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+! at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:53)
+! at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:44)
+! at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:85)
+! at io.dropwizard.cli.Cli.run(Cli.java:75)
+! at io.dropwizard.Application.run(Application.java:93)
+! at com.dropwizard.helloworld.HelloWorld.HelloWorldApplication.main(HelloWorldApplication.java:53)
+INFO  [2018-02-26 11:30:51,717] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:30:51,718] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:30:51,719] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@55e42684{/,null,UNAVAILABLE}
+INFO  [2018-02-26 11:31:26,918] org.eclipse.jetty.util.log: Logging initialized @1643ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-02-26 11:31:27,007] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-02-26 11:31:27,008] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-02-26 11:31:27,202] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
+INFO  [2018-02-26 11:31:27,204] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-02-26 11:31:27,214] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
+INFO  [2018-02-26 11:31:27,249] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-02-26 11:31:27,712] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  [2018-02-26 11:31:28,080] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
+INFO  [2018-02-26 11:31:28,081] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
+INFO  [2018-02-26 11:31:28,081] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
+INFO  [2018-02-26 11:31:28,081] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
+INFO  [2018-02-26 11:31:28,081] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
+INFO  [2018-02-26 11:31:28,081] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
+INFO  [2018-02-26 11:31:28,081] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
+INFO  [2018-02-26 11:31:28,082] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
+INFO  [2018-02-26 11:31:28,082] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
+INFO  [2018-02-26 11:31:28,352] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-02-26 11:31:28,502] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
+INFO  [2018-02-26 11:31:28,723] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:31:28,723] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:31:28,726] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2018-02-26 11:31:29,335] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /employees/{id} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    GET     /employees/{name} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    POST    /hello/greeting (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    GET     /hello/message (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    POST    /hello/post (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    DELETE  /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    GET     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    HEAD    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    POST    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    PUT     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+
+INFO  [2018-02-26 11:31:29,337] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@4f7bb8df{/,null,AVAILABLE}
+INFO  [2018-02-26 11:31:29,343] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2018-02-26 11:31:29,349] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@43a59289{/,null,AVAILABLE}
+INFO  [2018-02-26 11:31:29,359] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 11:31:29,360] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 11:31:29,361] org.eclipse.jetty.server.Server: Started @4086ms
+DEBUG [2018-02-26 11:31:47,543] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-26 11:31:47,615] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    101920 nanoseconds spent acquiring 2 JDBC connections;
+    72671 nanoseconds spent releasing 2 JDBC connections;
+    25647718 nanoseconds spent preparing 1 JDBC statements;
+    1065565 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    9105258 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 0 collections);
+    54946 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+DEBUG [2018-02-26 11:31:56,993] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-26 11:31:56,999] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    96399 nanoseconds spent acquiring 2 JDBC connections;
+    70447 nanoseconds spent releasing 2 JDBC connections;
+    164902 nanoseconds spent preparing 1 JDBC statements;
+    1024687 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    225788 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 0 collections);
+    7458 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2018-02-26 14:32:18,284] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-26 14:32:18,287] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-26 14:32:18,290] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@43a59289{/,null,UNAVAILABLE}
+INFO  [2018-02-26 14:32:18,297] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@4f7bb8df{/,null,UNAVAILABLE}

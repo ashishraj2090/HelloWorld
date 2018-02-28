@@ -29,6 +29,7 @@ import javax.xml.bind.JAXBElement;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.google.gson.Gson;
 
 import io.dropwizard.hibernate.UnitOfWork;
 import io.dropwizard.jersey.params.LongParam;
@@ -81,6 +82,18 @@ public class EmployeeResource {
         }
     }
 
+    @POST
+    @Path("/new")
+    @UnitOfWork
+    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Response createEmployee() {
+    	Gson gson=new Gson();
+    	Employee emp=new Employee("shantanu","kumar","developer","666666","sant@gmail.com");
+    		return Response.ok(gson.toJson(employeeDAO.createEmployee(emp))).build();
+}
+    
+    
     /**
      * Method looks for an employee by her id.
      *

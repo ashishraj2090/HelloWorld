@@ -44,6 +44,12 @@ public class EmployeeDAO extends AbstractDAO<Employee> {
         );
     }
 
+    public Employee createEmployee(Employee emp) {
+       
+   // 	String hql = "INSERT INTO Employee(Employee.getFirstName, Employee.getLastName, Employee.getSalary, Employee.getPhone, Employee.getE_mail)" ;
+    	
+    	return persist(emp);
+    }
     /**
      * Method looks for an employee by her id.
      *

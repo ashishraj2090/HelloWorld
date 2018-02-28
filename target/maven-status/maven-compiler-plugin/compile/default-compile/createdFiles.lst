@@ -1,4 +1,4 @@
-com/dropwizard/helloworld/HelloWorld/HelloGreeting.class
 com/dropwizard/helloworld/HelloWorld/HelloWorldConfiguration.class
 com/dropwizard/helloworld/HelloWorld/HelloWorldApplication.class
+com/dropwizard/helloworld/HelloWorld/HelloGreeting.class
 com/dropwizard/helloworld/HelloWorld/HelloResource.class

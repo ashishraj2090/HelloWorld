@@ -1,27 +1,28 @@
-INFO  [2018-02-27 05:56:23,030] org.eclipse.jetty.util.log: Logging initialized @3575ms to org.eclipse.jetty.util.log.Slf4jLog
-INFO  [2018-02-27 05:56:23,285] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
-INFO  [2018-02-27 05:56:23,287] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
-INFO  [2018-02-27 05:56:23,755] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
-INFO  [2018-02-27 05:56:23,757] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
-INFO  [2018-02-27 05:56:23,774] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
-INFO  [2018-02-27 05:56:23,818] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
-INFO  [2018-02-27 05:56:24,679] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-INFO  [2018-02-27 05:56:25,148] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
-INFO  [2018-02-27 05:56:25,149] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
-INFO  [2018-02-27 05:56:25,149] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
-INFO  [2018-02-27 05:56:25,149] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
-INFO  [2018-02-27 05:56:25,149] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
-INFO  [2018-02-27 05:56:25,150] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
-INFO  [2018-02-27 05:56:25,153] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
-INFO  [2018-02-27 05:56:25,153] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
-INFO  [2018-02-27 05:56:25,153] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
-INFO  [2018-02-27 05:56:25,449] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
-INFO  [2018-02-27 05:56:25,721] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
-INFO  [2018-02-27 05:56:26,071] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2018-02-27 05:56:26,071] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2018-02-27 05:56:26,074] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
-INFO  [2018-02-27 05:56:27,035] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+INFO  [2018-02-28 11:19:27,887] org.eclipse.jetty.util.log: Logging initialized @2031ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-02-28 11:19:28,010] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-02-28 11:19:28,013] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-02-28 11:19:28,282] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
+INFO  [2018-02-28 11:19:28,284] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-02-28 11:19:28,296] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
+INFO  [2018-02-28 11:19:28,334] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-02-28 11:19:28,994] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  [2018-02-28 11:19:29,353] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
+INFO  [2018-02-28 11:19:29,353] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
+INFO  [2018-02-28 11:19:29,354] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
+INFO  [2018-02-28 11:19:29,354] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
+INFO  [2018-02-28 11:19:29,354] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
+INFO  [2018-02-28 11:19:29,354] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
+INFO  [2018-02-28 11:19:29,354] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
+INFO  [2018-02-28 11:19:29,354] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
+INFO  [2018-02-28 11:19:29,355] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
+INFO  [2018-02-28 11:19:29,613] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-02-28 11:19:29,762] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
+INFO  [2018-02-28 11:19:30,013] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:19:30,014] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:19:30,017] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2018-02-28 11:19:30,667] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
 
+    POST    /employees/new (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
     GET     /employees/{id} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
     GET     /employees/{name} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
     POST    /hello/greeting (com.dropwizard.helloworld.HelloWorld.HelloResource)
@@ -33,43 +34,273 @@ INFO  [2018-02-27 05:56:27,035] io.dropwizard.jersey.DropwizardResourceConfig: T
     POST    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
     PUT     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
 
-INFO  [2018-02-27 05:56:27,037] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@35e75f7a{/,null,AVAILABLE}
-INFO  [2018-02-27 05:56:27,057] io.dropwizard.setup.AdminEnvironment: tasks = 
+INFO  [2018-02-28 11:19:30,671] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@28b5662d{/,null,AVAILABLE}
+INFO  [2018-02-28 11:19:30,677] io.dropwizard.setup.AdminEnvironment: tasks = 
 
     POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
     POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
 
-INFO  [2018-02-27 05:56:27,070] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@213012a0{/,null,AVAILABLE}
-INFO  [2018-02-27 05:56:27,121] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2018-02-27 05:56:27,122] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2018-02-27 05:56:27,122] org.eclipse.jetty.server.Server: Started @7685ms
-DEBUG [2018-02-27 05:56:35,703] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
-INFO  [2018-02-27 05:56:36,088] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    116927 nanoseconds spent acquiring 2 JDBC connections;
-    91824 nanoseconds spent releasing 2 JDBC connections;
-    36411928 nanoseconds spent preparing 1 JDBC statements;
-    11338516 nanoseconds spent executing 1 JDBC statements;
+INFO  [2018-02-28 11:19:30,684] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@517a46f3{/,null,AVAILABLE}
+INFO  [2018-02-28 11:19:30,705] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:19:30,706] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:19:30,707] org.eclipse.jetty.server.Server: Started @4852ms
+DEBUG [2018-02-28 11:19:59,129] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-28 11:19:59,287] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    97680 nanoseconds spent acquiring 2 JDBC connections;
+    94076 nanoseconds spent releasing 2 JDBC connections;
+    27270418 nanoseconds spent preparing 1 JDBC statements;
+    9864506 nanoseconds spent executing 1 JDBC statements;
     0 nanoseconds spent executing 0 JDBC batches;
     0 nanoseconds spent performing 0 L2C puts;
     0 nanoseconds spent performing 0 L2C hits;
     0 nanoseconds spent performing 0 L2C misses;
-    6262426 nanoseconds spent executing 1 flushes (flushing a total of 3 entities and 0 collections);
-    64161 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+    5087317 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 0 collections);
+    85364 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-DEBUG [2018-02-27 05:58:20,011] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
-INFO  [2018-02-27 05:58:20,016] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
-    78490 nanoseconds spent acquiring 2 JDBC connections;
-    47393 nanoseconds spent releasing 2 JDBC connections;
-    157837 nanoseconds spent preparing 1 JDBC statements;
-    574616 nanoseconds spent executing 1 JDBC statements;
+DEBUG [2018-02-28 11:20:09,293] org.hibernate.SQL: /* insert com.dropwizard.helloworld.HelloWorld.Employee */ insert into employees (e_mail, first_name, last_name, phone, e_position) values (?, ?, ?, ?, ?)
+INFO  [2018-02-28 11:20:09,418] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    93939 nanoseconds spent acquiring 2 JDBC connections;
+    64100 nanoseconds spent releasing 2 JDBC connections;
+    726370 nanoseconds spent preparing 1 JDBC statements;
+    86203700 nanoseconds spent executing 1 JDBC statements;
     0 nanoseconds spent executing 0 JDBC batches;
     0 nanoseconds spent performing 0 L2C puts;
     0 nanoseconds spent performing 0 L2C hits;
     0 nanoseconds spent performing 0 L2C misses;
-    250863 nanoseconds spent executing 1 flushes (flushing a total of 4 entities and 0 collections);
-    8751 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+    142710 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
 }
-INFO  [2018-02-27 08:45:21,554] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
-INFO  [2018-02-27 08:45:21,556] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
-INFO  [2018-02-27 08:45:21,559] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@213012a0{/,null,UNAVAILABLE}
-INFO  [2018-02-27 08:45:21,572] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@35e75f7a{/,null,UNAVAILABLE}
+DEBUG [2018-02-28 11:20:28,236] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-28 11:20:28,242] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    102881 nanoseconds spent acquiring 2 JDBC connections;
+    47764 nanoseconds spent releasing 2 JDBC connections;
+    185205 nanoseconds spent preparing 1 JDBC statements;
+    1250130 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    332423 nanoseconds spent executing 1 flushes (flushing a total of 5 entities and 0 collections);
+    8243 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+DEBUG [2018-02-28 11:20:41,994] org.hibernate.SQL: /* insert com.dropwizard.helloworld.HelloWorld.Employee */ insert into employees (e_mail, first_name, last_name, phone, e_position) values (?, ?, ?, ?, ?)
+INFO  [2018-02-28 11:20:42,023] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    84734 nanoseconds spent acquiring 2 JDBC connections;
+    55877 nanoseconds spent releasing 2 JDBC connections;
+    245737 nanoseconds spent preparing 1 JDBC statements;
+    2076420 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    119768 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+DEBUG [2018-02-28 11:21:29,588] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-28 11:21:29,595] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    370070 nanoseconds spent acquiring 2 JDBC connections;
+    44785 nanoseconds spent releasing 2 JDBC connections;
+    188813 nanoseconds spent preparing 1 JDBC statements;
+    633647 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    341468 nanoseconds spent executing 1 flushes (flushing a total of 6 entities and 0 collections);
+    6689 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+DEBUG [2018-02-28 11:21:50,314] org.hibernate.SQL: /* insert com.dropwizard.helloworld.HelloWorld.Employee */ insert into employees (e_mail, first_name, last_name, phone, e_position) values (?, ?, ?, ?, ?)
+INFO  [2018-02-28 11:21:50,332] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    63949 nanoseconds spent acquiring 2 JDBC connections;
+    46813 nanoseconds spent releasing 2 JDBC connections;
+    251851 nanoseconds spent preparing 1 JDBC statements;
+    1268105 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    104836 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2018-02-28 11:22:17,630] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:22:17,630] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:22:17,632] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@517a46f3{/,null,UNAVAILABLE}
+INFO  [2018-02-28 11:22:17,640] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@28b5662d{/,null,UNAVAILABLE}
+INFO  [2018-02-28 11:22:31,294] org.eclipse.jetty.util.log: Logging initialized @1826ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-02-28 11:22:31,385] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-02-28 11:22:31,387] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-02-28 11:22:31,591] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
+INFO  [2018-02-28 11:22:31,593] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-02-28 11:22:31,603] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
+INFO  [2018-02-28 11:22:31,637] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-02-28 11:22:32,130] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  [2018-02-28 11:22:32,494] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
+INFO  [2018-02-28 11:22:32,495] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
+INFO  [2018-02-28 11:22:32,495] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
+INFO  [2018-02-28 11:22:32,495] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
+INFO  [2018-02-28 11:22:32,495] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
+INFO  [2018-02-28 11:22:32,495] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
+INFO  [2018-02-28 11:22:32,495] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
+INFO  [2018-02-28 11:22:32,495] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
+INFO  [2018-02-28 11:22:32,496] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
+INFO  [2018-02-28 11:22:32,759] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-02-28 11:22:32,911] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
+INFO  [2018-02-28 11:22:33,112] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:22:33,112] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:22:33,114] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2018-02-28 11:22:33,759] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    GET     /employees/new (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    GET     /employees/{id} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    GET     /employees/{name} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    POST    /hello/greeting (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    GET     /hello/message (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    POST    /hello/post (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    DELETE  /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    GET     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    HEAD    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    POST    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    PUT     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+
+INFO  [2018-02-28 11:22:33,762] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@34b2d51a{/,null,AVAILABLE}
+INFO  [2018-02-28 11:22:33,771] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2018-02-28 11:22:33,777] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@38fb151a{/,null,AVAILABLE}
+INFO  [2018-02-28 11:22:33,788] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:22:33,789] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:22:33,790] org.eclipse.jetty.server.Server: Started @4323ms
+DEBUG [2018-02-28 11:22:38,991] org.hibernate.SQL: /* insert com.dropwizard.helloworld.HelloWorld.Employee */ insert into employees (e_mail, first_name, last_name, phone, e_position) values (?, ?, ?, ?, ?)
+INFO  [2018-02-28 11:22:39,092] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    101650 nanoseconds spent acquiring 2 JDBC connections;
+    93422 nanoseconds spent releasing 2 JDBC connections;
+    24071779 nanoseconds spent preparing 1 JDBC statements;
+    37065478 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3901923 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2018-02-28 11:23:24,582] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:23:24,583] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:23:24,585] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@38fb151a{/,null,UNAVAILABLE}
+INFO  [2018-02-28 11:23:24,590] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@34b2d51a{/,null,UNAVAILABLE}
+INFO  [2018-02-28 11:23:29,568] org.eclipse.jetty.util.log: Logging initialized @1852ms to org.eclipse.jetty.util.log.Slf4jLog
+INFO  [2018-02-28 11:23:29,666] io.dropwizard.server.DefaultServerFactory: Registering jersey handler with root path prefix: /
+INFO  [2018-02-28 11:23:29,668] io.dropwizard.server.DefaultServerFactory: Registering admin handler with root path prefix: /
+INFO  [2018-02-28 11:23:29,896] org.hibernate.Version: HHH000412: Hibernate Core {5.2.12.Final}
+INFO  [2018-02-28 11:23:29,897] org.hibernate.cfg.Environment: HHH000206: hibernate.properties not found
+INFO  [2018-02-28 11:23:29,909] io.dropwizard.hibernate.SessionFactoryFactory: Entity classes: [com.dropwizard.helloworld.HelloWorld.Employee]
+INFO  [2018-02-28 11:23:29,945] org.hibernate.annotations.common.Version: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+INFO  [2018-02-28 11:23:30,554] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+INFO  [2018-02-28 11:23:30,988] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.util.Currency] overrides previous : org.hibernate.type.CurrencyType@73e776b7
+INFO  [2018-02-28 11:23:30,990] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Duration] overrides previous : org.hibernate.type.DurationType@4d0cc83e
+INFO  [2018-02-28 11:23:30,990] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.Instant] overrides previous : org.hibernate.type.InstantType@bc09d57
+INFO  [2018-02-28 11:23:30,991] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDate] overrides previous : org.hibernate.type.LocalDateType@467045c4
+INFO  [2018-02-28 11:23:30,991] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalDateTime] overrides previous : org.hibernate.type.LocalDateTimeType@55736cfe
+INFO  [2018-02-28 11:23:30,991] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.LocalTime] overrides previous : org.hibernate.type.LocalTimeType@6f7a2a5
+INFO  [2018-02-28 11:23:30,992] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetDateTime] overrides previous : org.hibernate.type.OffsetDateTimeType@42ed89da
+INFO  [2018-02-28 11:23:30,992] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.OffsetTime] overrides previous : org.hibernate.type.OffsetTimeType@c3719e5
+INFO  [2018-02-28 11:23:30,992] org.hibernate.type.BasicTypeRegistry: HHH000270: Type registration [java.time.ZonedDateTime] overrides previous : org.hibernate.type.ZonedDateTimeType@65c17e38
+INFO  [2018-02-28 11:23:31,290] org.hibernate.hql.internal.QueryTranslatorFactoryInitiator: HHH000397: Using ASTQueryTranslatorFactory
+INFO  [2018-02-28 11:23:31,444] io.dropwizard.server.ServerFactory: Starting HelloWorldApplication
+INFO  [2018-02-28 11:23:31,650] org.eclipse.jetty.setuid.SetUIDListener: Opened application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:23:31,650] org.eclipse.jetty.setuid.SetUIDListener: Opened admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:23:31,653] org.eclipse.jetty.server.Server: jetty-9.4.7.v20170914
+INFO  [2018-02-28 11:23:32,260] io.dropwizard.jersey.DropwizardResourceConfig: The following paths were found for the configured resources:
+
+    POST    /employees/new (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    GET     /employees/{id} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    GET     /employees/{name} (com.dropwizard.helloworld.HelloWorld.EmployeeResource)
+    POST    /hello/greeting (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    GET     /hello/message (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    POST    /hello/post (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    DELETE  /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    GET     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    HEAD    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    POST    /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+    PUT     /hello/{param} (com.dropwizard.helloworld.HelloWorld.HelloResource)
+
+INFO  [2018-02-28 11:23:32,262] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@34b2d51a{/,null,AVAILABLE}
+INFO  [2018-02-28 11:23:32,268] io.dropwizard.setup.AdminEnvironment: tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+
+INFO  [2018-02-28 11:23:32,274] org.eclipse.jetty.server.handler.ContextHandler: Started i.d.j.MutableServletContextHandler@38fb151a{/,null,AVAILABLE}
+INFO  [2018-02-28 11:23:32,285] org.eclipse.jetty.server.AbstractConnector: Started application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:23:32,285] org.eclipse.jetty.server.AbstractConnector: Started admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:23:32,285] org.eclipse.jetty.server.Server: Started @4570ms
+DEBUG [2018-02-28 11:23:41,259] org.hibernate.SQL: /* insert com.dropwizard.helloworld.HelloWorld.Employee */ insert into employees (e_mail, first_name, last_name, phone, e_position) values (?, ?, ?, ?, ?)
+INFO  [2018-02-28 11:23:41,320] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    97875 nanoseconds spent acquiring 2 JDBC connections;
+    90840 nanoseconds spent releasing 2 JDBC connections;
+    27918947 nanoseconds spent preparing 1 JDBC statements;
+    1373806 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    3878104 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+DEBUG [2018-02-28 11:23:49,930] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-28 11:23:49,954] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    94958 nanoseconds spent acquiring 2 JDBC connections;
+    49272 nanoseconds spent releasing 2 JDBC connections;
+    307379 nanoseconds spent preparing 1 JDBC statements;
+    719394 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    514081 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 0 collections);
+    49037 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+DEBUG [2018-02-28 11:24:34,796] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-28 11:24:34,802] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    75116 nanoseconds spent acquiring 2 JDBC connections;
+    42317 nanoseconds spent releasing 2 JDBC connections;
+    159236 nanoseconds spent preparing 1 JDBC statements;
+    576504 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    457913 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 0 collections);
+    7069 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+DEBUG [2018-02-28 11:24:49,006] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-28 11:24:49,015] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    74992 nanoseconds spent acquiring 2 JDBC connections;
+    41378 nanoseconds spent releasing 2 JDBC connections;
+    165090 nanoseconds spent preparing 1 JDBC statements;
+    565921 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    524309 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 0 collections);
+    5879 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+DEBUG [2018-02-28 11:37:15,509] org.hibernate.SQL: /* com.dropwizard.helloworld.Helloworld.Employee.findAll */ select employee0_.id as id1_0_, employee0_.e_mail as e_mail2_0_, employee0_.first_name as first_na3_0_, employee0_.last_name as last_nam4_0_, employee0_.phone as phone5_0_, employee0_.e_position as e_positi6_0_ from employees employee0_
+INFO  [2018-02-28 11:37:15,516] org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: Session Metrics {
+    538961 nanoseconds spent acquiring 2 JDBC connections;
+    77918 nanoseconds spent releasing 2 JDBC connections;
+    193737 nanoseconds spent preparing 1 JDBC statements;
+    1414155 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    420150 nanoseconds spent executing 1 flushes (flushing a total of 9 entities and 0 collections);
+    7327 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+INFO  [2018-02-28 11:46:03,856] org.eclipse.jetty.server.AbstractConnector: Stopped application@ad3f70a{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+INFO  [2018-02-28 11:46:03,856] org.eclipse.jetty.server.AbstractConnector: Stopped admin@54ccb3{HTTP/1.1,[http/1.1]}{0.0.0.0:8081}
+INFO  [2018-02-28 11:46:03,858] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@38fb151a{/,null,UNAVAILABLE}
+INFO  [2018-02-28 11:46:03,868] org.eclipse.jetty.server.handler.ContextHandler: Stopped i.d.j.MutableServletContextHandler@34b2d51a{/,null,UNAVAILABLE}
