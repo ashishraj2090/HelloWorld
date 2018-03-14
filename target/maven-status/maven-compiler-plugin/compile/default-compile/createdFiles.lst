@@ -1,4 +1,9 @@
-com/dropwizard/helloworld/HelloWorld/HelloWorldConfiguration.class
-com/dropwizard/helloworld/HelloWorld/HelloWorldApplication.class
+com/dropwizard/helloworld/HelloWorld/Employee.class
+com/dropwizard/helloworld/HelloWorld/EmployeeDAO.class
 com/dropwizard/helloworld/HelloWorld/HelloGreeting.class
+com/dropwizard/helloworld/HelloWorld/HelloWorldConfiguration.class
+com/dropwizard/helloworld/health/DemoHealthCheck.class
+com/dropwizard/helloworld/HelloWorld/HelloWorldApplication.class
+com/dropwizard/helloworld/HelloWorld/EmployeeResource.class
 com/dropwizard/helloworld/HelloWorld/HelloResource.class
+com/dropwizard/helloworld/HelloWorld/HelloWorldApplication$1.class

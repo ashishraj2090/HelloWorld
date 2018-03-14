@@ -45,6 +45,7 @@ public class HelloWorldApplication extends Application<HelloWorldConfiguration>{
      };
 
     public static void main( String[] args ) throws Exception {
+    	System.out.println("Hello World Application");
     	System.out.println(LOGGER);
   LOGGER.info("this is my logger");
    

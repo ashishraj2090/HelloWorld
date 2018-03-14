@@ -27,7 +27,7 @@
           <transformers>
             <transformer />
             <transformer>
-              <mainClass>${mainClass}</mainClass>
+              <mainClass>com.dropwizard.helloworld.HelloWorld.HelloWorldApplication</mainClass>
             </transformer>
           </transformers>
           <filters>
@@ -49,7 +49,6 @@
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
-              <mainClass>${mainClass}</mainClass>
             </manifest>
           </archive>
         </configuration>
@@ -60,6 +59,21 @@
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>exec-maven-plugin</artifactId>
+        <version>1.6.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>java</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <mainClass>${mainClass}</mainClass>
         </configuration>
       </plugin>
       <plugin>
